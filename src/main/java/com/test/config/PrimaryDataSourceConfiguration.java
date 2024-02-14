@@ -47,7 +47,6 @@ public class PrimaryDataSourceConfiguration {
             EntityManagerFactoryBuilder primaryEntityManagerFactoryBuilder, @Qualifier("primaryDataSource") DataSource primaryDataSource) {
 
         Map<String, String> primaryJpaProperties = new HashMap<>();
-//        primaryJpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         primaryJpaProperties.put("hibernate.hbm2ddl.auto", "create-drop");
 
         return primaryEntityManagerFactoryBuilder
